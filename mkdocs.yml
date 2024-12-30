@@ -1,0 +1,76 @@
+site_name: Apolo documentation
+site_url: https://ivancheban.github.io/platform-docs-new/
+nav:
+  - Concepts:
+    - Introduction: index.md
+    - First Steps:
+      - concepts/first-steps/getting-started.md
+      - concepts/first-steps/training-your-first-model.md
+      - concepts/first-steps/running-your-code.md
+      - concepts/first-steps/collaborative-development.md
+    - concepts/apolo-base-docker-image.md
+    - FAQ: concepts/faq/faq.md
+    - Troubleshooting: concepts/troubleshooting/troubleshooting.md
+    - References: concepts/references/references.md
+    - Apolo Console:
+      - Getting Started:
+        - concepts/apolo-console/getting-started/sign-up-login.md
+        - concepts/apolo-console/getting-started/organizations.md
+        - concepts/apolo-console/getting-started/clusters.md
+        - concepts/apolo-console/getting-started/projects.md
+  - Apolo CLI:
+    - apolo-cli/installing.md
+theme:
+  features:
+    - navigation.footer
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - content.code.copy
+  name: material
+  custom_dir: overrides
+  logo: img/logo.png
+  favicon: img/apolo.ico
+  palette: 
+    primary: black
+    accent: custom
+
+  
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ivancheban
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/ivan-cheban-a24b576
+  generator: false
+  consent:
+    title: Cookie consent
+    actions:
+      - accept
+      - reject
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+
+markdown_extensions:
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - admonition
+  - pymdownx.details
+copyright: >
+  Copyright &copy; 2024 Ivan Cheban –
+  <a href="#__consent">Change cookie settings</a>
+
+

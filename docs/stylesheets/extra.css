@@ -1,0 +1,11 @@
+:root {
+  @extend %root;
+  --md-accent-fg-color: rgb(19 3 133);
+  --md-admonition-fg-color: rgb(19 3 133);
+  --md-warning-fg-color: rgb(19 3 133);
+  --md-note-fg-color: rgb(19 3 133);
+  --md-admonition-bg-color: rgb(19 3 133);
+  background-color: var(--md-admonition-bg-color);
+  border-color: rgb(19 3 133);
+  --md-typeset-color: rgb(19 3 133);
+};
