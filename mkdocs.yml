@@ -1,5 +1,5 @@
 site_name: Apolo documentation
-site_url: https://ivancheban.github.io/platform-docs-new/
+site_url: https://apolo-docs.netlify.app/
 nav:
   - Concepts:
     - Introduction: index.md
